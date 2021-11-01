@@ -1,0 +1,15 @@
+Toma Andrei 331CB
+
+2. Se observa ca algoritmul oets scaleaza. Pe input N = 100000 si P = 8 de la
+implementarea secventiala a algoritmului care avea timpul 41.5 de secunde a
+scazut la 32.4 de secunde cu implementarea paralela a algoritmului. Am
+paralelizat procesele de sortare de pe pozitii impare si de pe cele pare. Pentru
+sincronizare am folosit o bariera pentru a nu se trece la sortarea pozitiilor
+impare inainte de terminarea celor pare.
+
+4. Se observa ca algoritmul shear scaleaza. Pe input L = 1000 si P = 8 de la
+implementarea secventiala a algoritmului care avea timpul aproximativ o secunda
+a scazut la 0.286 de secunde cu implementarea paralela a algoritmului. Am
+paralelizat procesele de sortare a linilor si de sortare a coloanelor. Pentru
+sincronizare am folosit o bariera care sa nu permita trecerea mai departe a
+threadurilor pana cand nu s-au terminat de sortat liniile.

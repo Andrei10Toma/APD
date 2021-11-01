@@ -1,0 +1,6 @@
+Toma Andrei 331CB
+
+Am paralelizat pe bucla inner si am pus un mutex in interiorul celei 
+de a doua bucla (cea din mijloc). Am pus un mutex pentru ca sa nu apara
+un race condition pe c[0][0], c[0][1] etc. Dupa ce se termina cu elementul
+respectiv se da unlock la mutex. Btw, am facut si bonusul :).

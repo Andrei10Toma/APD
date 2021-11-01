@@ -1,0 +1,8 @@
+Toma Andrei 331CB
+
+La exercitiul 6 am luat numarul de threaduri cu functia predefinita si dupa am
+obtinut capetele vectorului cu hintul din laborator si am creat un thread
+pentru fiecare partitionare. Capetele le-am retinut intr-o structura pe care
+am pasat-o ca argument la argumentul functie din functia pthread_create.
+In poza atasata (exercitiul_6.png) se vad timpii pentru rularea single-thread
+(5.824 s) si cei pentru rularea multi-thread (3.848 s, 3.839 s).
