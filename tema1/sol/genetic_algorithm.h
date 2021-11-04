@@ -12,9 +12,12 @@ typedef struct _thread_params {
     int object_count;
     int generations_count;
     int num_threads;
+    int sack_capacity;
     individual *current_generation;
     individual *next_generation;
     pthread_barrier_t *barrier;
+    pthread_mutex_t *mutex;
+    const sack_object *objects;
 } thread_params;
 
 
@@ -31,7 +34,7 @@ void print_generation(const individual *generation, int limit);
 void print_best_fitness(const individual *generation);
 
 // computes the fitness function for each individual in a generation
-void compute_fitness_function(const sack_object *objects, individual *generation, int object_count, int sack_capacity);
+void compute_fitness_function(const sack_object *objects, individual *generation, int object_count, int sack_capacity, int start);
 
 // compares two individuals by fitness and then number of objects in the sack (to be used with qsort)
 int cmpfunc(const void *a, const void *b);

@@ -243,6 +243,7 @@ void run_genetic_algorithm(const sack_object *objects, int object_count, int gen
 			crossover(current_generation + i, next_generation + cursor + i, k);
 		}
 
+
 		// switch to new generation
 		tmp = current_generation;
 		current_generation = next_generation;
