@@ -16,7 +16,6 @@ typedef struct _thread_params {
     individual *current_generation;
     individual *next_generation;
     pthread_barrier_t *barrier;
-    pthread_mutex_t *mutex;
     const sack_object *objects;
 } thread_params;
 

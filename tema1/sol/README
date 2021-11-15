@@ -1,1 +1,31 @@
-Toma Andrei 331CB
+    Toma Andrei 331CB
+
+    Introducere:
+
+    Pentru a paraleliza algoritmul geneticul am pornit de la implementarea
+secventiala si am luat fiecare bucata de cod si am incercat sa o paralelizez.
+Pentru inceput am modificat in partea de read_input sa fie citit si numarul
+de threaduri. Mai departe, am inceput sa paralelizez functia principala,
+run_genetic_algorithm.
+
+    Paralelizarea run_genetic_algorithm:
+
+    Pornesc toate cele num_threads threaduri o singura data. Pentru aceste
+threaduri pornite anterior se va apela functia thread_function si ca parametru
+va avea o structura definita de mine care contine thread id-ul, numarul de
+obiecte, numarul de generatii, numarul de threaduri, capacitatea rucsacului,
+generatia curenta, urmatoarea generatie, bariera si obiectele care pot fi puse
+in rucsac. La inceput am paralelizat initializarea, calculand capetele celor 2
+vectori in functie de numarul de threaduri si numarul de elemente din vector.
+Dupa initializare, astept prin intermediul barierei din parametrii sa termine
+toate threadurile initializarea. Mai departe pentru fiecare generatie voi
+calcula in paralel mai multe operatii. Dupa fiecare operatie se va afla o
+bariera pentru a astepta ca toate threadurile sa isi termine treaba. 
+Computarea functiei de fitness in paralel prin calculul celor 2 capete
+ale vectorului pentru fiecare thread. Mai departe, dupa computarea fitness-ului
+se va face sortarea paralela, astfel se va sorta pe intervale generatia curenta
+si dupa aceea se vor interclasa pe un singur thread toate subintervalele sortate
+din vector. Dupa aceasta se paralelizeaza operatiile prin intermediul carora
+obtinem urmatoarea generatie: selectia elitei, mutatiile si crossover-ul. Dupa
+aceste operatii se actualizeaza generatia curenta si se printeaza cel mai bun
+fitness al generatiei curente daca numarul generatie este multiplu de 5.
