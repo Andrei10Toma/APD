@@ -1,0 +1,6 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ãå”
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ¥Î¤
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñšë‰þÿÿÿÿ
+c
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8£æõÕÎ/

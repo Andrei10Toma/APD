@@ -1,0 +1,7 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²§Ûì8¢¯›Ò/
+h
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ÿÑ¨çıÿÿÿÿ8¢¯›Ò/
+]	java:S125"<This block of commented-out lines of code should be removed.(ÍãµÀøÿÿÿÿ8Ğğ›Ò/
+H
+java:S1068"&Remove this unused "id" private field.(ÎÂ’„ÿÿÿÿÿ8Ğğ›Ò/

@@ -1,0 +1,18 @@
+Toma Andrei 331CB
+
+bug1: La primul bug se apela run in loc de start.
+
+bug2: Metodele si blocurilse synchronized sunt reentrante. Adica threadul care a obtinut monitorul poate intra in orice
+alt bloc sau metoda synchronized asociate obiectului.
+
+bug3: a si b punctau la aceeasi zona de memorie de aia mergea unexpected si nu se crea race condition. Am modificat la
+b in loc de "LOCK" am pus "LOCK2" si a functionat.
+
+bug4: Am adaugat keyword-ul volatile pentru a nu se citi valoarea proasta din cache.
+
+bug5: Apare un deadlock pentru ca primul thread ia resursa A, dupa care al doilea thread primeste resursa B si inauntru
+lui A o sa ceara resursa B care este folosita si dupa B o sa ceara A care este folosita si se va bloca. Pentru a rezolva
+bugul am scos din interiorul blocului sincronizat cu A sincronizarea cu B si din B sincronizarea cu A.
+
+bug6: Va aparea un race condition pe instance si se va apela de mai multe ori metoda getInstance cu instance egal cu
+null. Pentru a repara am pus synchronized pe metoda.

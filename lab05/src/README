@@ -1,0 +1,6 @@
+Toma Andrei 331CB
+
+A fost ok la problemele cu producer consumer si filozofi.
+Am mai facut si barber, dar de ce in main acolo dupa ce se face un thread de client se da Thread.sleep(100) dupa el.
+Astfel, avand acest delay barbierul o sa ii tunda pe toti clientii. Am scos acel sleep pentru a avea si niste clienti
+care nu sunt serviti. E ok?
