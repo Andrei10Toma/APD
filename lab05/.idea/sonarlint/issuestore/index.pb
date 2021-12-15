@@ -31,3 +31,12 @@ k
 ;src/multipleProducersMultipleConsumersNBuffer/Consumer.java,a\6\a644feb84775038dc99642b42e168a862a52e82f
 b
 2src/multipleProducersMultipleConsumers/Buffer.java,f\c\fc2fbb49e4b9724abc1e3b6ae3f32bd815d244a7
+:
+
+src/README,d\5\d59cf7ec7bdeaa17fbf176dad76b954594d92e53
+D
+src/barber/Main.java,d\4\d4ac471319c7b417f73334aae042ab32215b295e
+F
+src/barber/Client.java,2\c\2c1bb31a29dd90ce7c51d144bf59f77d5af61a68
+F
+src/barber/Barber.java,0\5\0599ec9b5bc7f57f62c2e2af87b3ff446520fc42
