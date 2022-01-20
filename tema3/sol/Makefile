@@ -1,9 +1,5 @@
 build:
-	mpic++ tema3.cpp -o tema3
-
-
-run: build
-	mpirun --oversubscribe -np 9 ./tema3 12
+	mpicc tema3.c -o tema3
 
 
 clean:
